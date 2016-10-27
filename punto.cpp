@@ -6,10 +6,11 @@ using namespace std;
 
 class Point{
 public:
-    double x,y;
+    int n;
+    int *a;
 
     Point( Point p[], int size){
-        cout<<"elementos:"<<x<<"."<<y<<"\n"<<"tamaño:"<<size<<endl;
+        cout<<"elementos:"<<x<<"."<<y<<"\n"<<"tamaÃ±o:"<<size<<endl;
     }
     Point( Point &a){
         x=a.x;y=a.y;cout<<"recibio elementos:"<<x<<"."<<y<<endl;
