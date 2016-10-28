@@ -1,28 +1,22 @@
-#ifndef PUNTOARRAY_H_INCLUDED
-#define PUNTOARRAY_H_INCLUDED
-
 #include <iostream>
 #include "punto.h"
 using namespace std;
 
-class Pointarray{
-private:
-    int _size;
-    Point *points;
-    void rezise(int n);
-public:
-    Pointaray();
-    Pointarray( Point p[], int _size);
-    Pointarray( Point &a);
-
-
-    void push_back(Point &p);
-    void insert( int posicion, Point &p);
-    void remove( int posicion);
-    void getzide();
-    void clean();
-};
-
-
-#endif // PUNTOARRAY_H_INCLUDED
-
+void Point::suma(double sumax,double sumay){
+    x+=sumax;y+=sumay;
+}
+void Point::setx(double nx){
+    x=nx;
+}
+void Point::sety(double ny){
+    y=ny;
+}
+void Point::printf(){
+    cout<<"("<<x<<"."<<y<<")";
+}
+double Point::getx(){
+    return x;
+}
+double Point::gety(){
+    return y;
+}
