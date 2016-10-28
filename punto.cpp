@@ -1,20 +1,19 @@
-#ifndef PUNTO_CPP_INCLUDED
-#define PUNTO_CPP_INCLUDED
-#include <iostream>
+#ifndef PUNTOARRAY_H_INCLUDED
+#define PUNTOARRAY_H_INCLUDED
 
+#include <iostream>
+#include "punto.h"
 using namespace std;
 
-class Point{
+class Pointarray{
+private:
+    int _size;
+    Point *points;
+    void rezise(int n);
 public:
-    int n;
-    int *a;
-
-    Point( Point p[], int size){
-        cout<<"elementos:"<<x<<"."<<y<<"\n"<<"tamaño:"<<size<<endl;
-    }
-    Point( Point &a){
-        x=a.x;y=a.y;cout<<"recibio elementos:"<<x<<"."<<y<<endl;
-    }
+    Pointaray();
+    Pointarray( Point p[], int _size);
+    Pointarray( Point &a);
 
 
     void push_back(Point &p);
@@ -25,4 +24,5 @@ public:
 };
 
 
-#endif // PUNTO_CPP_INCLUDED
+#endif // PUNTOARRAY_H_INCLUDED
+
